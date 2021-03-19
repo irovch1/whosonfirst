@@ -12,7 +12,8 @@
     "test": "./bin/units",
     "lint": "jshint .",
     "validate": "npm ls",
-    "travis": "npm run test"
+    "travis": "npm run test",
+    "debug": "cd .. && PATH=$PATH:/usr/local/bin PELIAS_CONFIG=./config.england.json node pelias-whosonfirst/import.js"
   },
   "repository": {
     "type": "git",
@@ -35,7 +36,7 @@
     "lodash": "^4.5.1",
     "pelias-blacklist-stream": "^1.0.0",
     "pelias-config": "^4.10.0",
-    "pelias-dbclient": "^2.13.0",
+    "pelias-dbclient": "../pelias-dbclient",
     "pelias-logger": "^1.2.1",
     "pelias-model": "^8.0.0",
     "through2": "^3.0.0",
